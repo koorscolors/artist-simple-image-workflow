@@ -28,7 +28,7 @@ The script will:
 - Create `working` and `output` directories if they don't exist
 - Convert all images to JPG format
 - Resize to max 1024px on longest dimension
-- Add copyright metadata for "Cooper Graham Beckel"
+- Add copyright metadata for "YOURNAME"
 - Add a simple watermark with your name
 - Place final images in the `output` directory
 
@@ -48,7 +48,7 @@ The script will:
 
 ### Copyright
 ```
---copyright-holder NAME Name of the copyright holder (default: Cooper Graham Beckel)
+--copyright-holder NAME Name of the copyright holder (default: YOURNAME)
 --year YEAR             Copyright year (defaults to current year)
 ```
 
@@ -92,12 +92,12 @@ python image_workflow.py --watermark-opacity 0.2 --watermark-scale 3
 
 ### Pattern watermark
 ```
-python image_workflow.py --watermark-repeat --watermark-angle 30 --watermark-text "© Cooper Beckel"
+python image_workflow.py --watermark-repeat --watermark-angle 30 --watermark-text "© YOURNAME"
 ```
 
 ### Custom workflow
 ```
-python image_workflow.py --input-dir raw-photos --output-dir web-ready --max-dimension 2000 --watermark-text "© Cooper Beckel" --watermark-scale 5 --watermark-font-color 255,255,0 --watermark-repeat
+python image_workflow.py --input-dir raw-photos --output-dir web-ready --max-dimension 2000 --watermark-text "© YOURNAME" --watermark-scale 5 --watermark-font-color 255,255,0 --watermark-repeat
 ```
 
 ### Filename modification examples
